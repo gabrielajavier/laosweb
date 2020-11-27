@@ -1,0 +1,297 @@
+.wrapper{
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50%;
+	height: 100vh;
+	overflow: hidden;
+}
+.bg-wrapper{
+  background-image: url(../assets/imagenes/background2.png) !important;
+	background-color: rgba(5, 3, 25, 0.70);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.box{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.date-wrapper{
+	width: 100%;
+	height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -20%);
+	color: $blanco;
+	.wrap-box{
+    margin-left: 10%;
+	}
+	h1 p{
+		margin: 0;
+		font-size: 7.5rem;
+		@include font-roboto;
+	}
+	h1 span{
+		display: inline-block;
+		font-size:30px;
+	}
+}
+.line-wrapper{
+	content: "";
+	background-color: $azul;
+  height: 5px;
+  width: 83px;
+  position: absolute;
+  top: 65px;
+  left: 10px;
+}
+a.btn-azul{
+	transition: .2s;
+	color: $blanco;
+	display: inline-block;
+	background-color: $azul;
+	padding: 8px 9px 5px 15px;
+	font-weight: 600;
+	margin-top: 20px;
+  span{
+		font-size: 17px;
+  	color: $blanco;
+    top: -2px;
+    position: relative;
+    margin-right: 11px;
+  }
+  i{
+    font-size: 1.5em;
+    position: relative;
+    top: 2px;
+  }
+  &:hover, &:active, &:focus{
+  	color: $blanco;
+  	background-color: $azul2;
+  }
+}
+
+.scroll-wrapper{
+	position: absolute;
+	display: inline-block;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	a{
+		color: $blanco;
+		&:hover{
+			color: rgba(255, 255, 255, 0.55);
+		}
+	}
+	.icon-mouse{
+		font-size: 2.5em;
+		position: relative;
+		z-index: 2;
+		display: inline-block;
+		margin: 0 auto;
+		animation: bounce 2s infinite;
+		-webkit-animation: bounce 2s infinite;
+		-moz-animation: bounce 2s infinite;
+		-o-animation: bounce 2s infinite;
+		-webkit-transform: translateY(-45%);
+		-ms-transform: translateY(-45%);
+		transform: translateY(-45%);	
+	}
+}
+
+/* Nosotros */
+#nosotros{
+  margin-top: 5%;
+}
+.wrap-6{
+	h1{
+		@include font-roboto;
+		margin:0;
+		color: $azul;
+		font-size:4.6rem;
+	}
+	span{
+		color: $oscuro1;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+	}
+	p{
+    margin-top: 35px;
+		color: $oscuro2;
+		font-size: 17px;
+	}
+}
+
+/* PRESENCIA EN PAISES*/
+#presencia{
+  padding: 7% 0;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 19% 50%;
+	background-image: url(../assets/imagenes/laos_map.png);
+}
+#presencia .wrap-6  span{
+	margin: 20px 25px 0px;
+	font-size: 17px;
+	font-weight: 600;
+	a{
+		color: $oscuro1;
+		&:hover{
+			color:$oscuro2;
+		}
+	}
+}
+.box-{
+	margin: 5em 15px;
+}
+
+/*Testimonio*/
+#testimonio{
+	background-size: cover;
+  background-position: 50% 0;
+	background-image: url(../assets/imagenes/bg-laos-testimonio.jpg);
+	.slider{
+		margin: 65px 0 80px;
+	}
+}
+.test-6{
+ 	background-color: rgba(255, 255, 255, 0.63922);
+	padding: 6em 45px 3em 100px !important;
+	-webkit-box-shadow: 0px 8px 15px -4px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0px 8px 15px -4px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 8px 15px -4px rgba(0, 0, 0, 0.35);
+	height: 275px;
+	p{
+		font-style: italic;
+		margin-top: 0;
+	}
+	i{
+    font-size: 5em;
+    position: absolute;
+    top: 39px;
+    left: 49px;
+    color: rgba(0, 0, 0, 0.11);
+	}
+	span{
+		color: $azul;
+		&:before{
+			content: "";
+	    background-color: $azul;
+			height: 5px;
+	    width: 36px;
+	    position: relative;
+	    left: 0;
+	    top: -2px;
+	    display: inline-block;
+	    margin-right: 10px;
+		}
+	}
+}
+
+.slider:focus, .slider:active, .slider:hover{
+	outline: 0 !important;
+}
+.img-test{
+	position: relative;
+  left: 60px;
+  top: 5px;
+  z-index: 10;
+}
+
+/*Evalua*/
+#wrap-ad{
+	.wrap-6{
+    padding: 80px 0 80px;
+    position: relative;
+		h1{
+			font-size: 2.3em;
+			line-height: 0.9;
+		}
+		span{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+		}
+		.line-wrapper{
+   	 	position: absolute;
+    	top: 92px;
+    	left: -95px;
+		}
+	}
+}
+footer{
+	background-color: $oscuro1;
+}
+.box-footer{
+	padding: 70px 0 30px;
+	color: $blanco;
+	text-align: center;
+	font-size: 12px;
+	img{
+		width: 45%; 
+	}
+}
+.link-x{
+	color: #848484;
+}
+footer .link-x a{
+	margin: 10px;
+	display: inline-block;
+	color: #848484;
+	&:hover{
+		color: #848484;
+	}
+}
+
+@media only screen and (max-width: 765px) and (min-width: 0){
+	.navbar-header img{
+    left: 2%;
+    position: relative;
+	}
+	.wrap-box{
+		margin-left: 0!important;
+	}	
+	.line-wrapper{
+		top: 0 !important;
+		left: 0;
+	}
+	#presencia{
+		background-image: none;
+	}
+
+	/*Evalua*/
+	#wrap-ad .wrap-6 .line-wrapper{
+		position: absolute;
+		top: 50px !important;
+		left: 0;
+	}
+
+	/*Testimonios*/
+	.img-test{
+		left: 0;
+	}
+	.test-6 {
+    padding: 3em 36px 3em 36px !important;
+  }
+
+	/*Footer*/
+	.box-footer img {
+    width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+	.wrap-box{
+		margin-left: 15%!important;
+	}	
+	/*Evalua*/
+	#wrap-ad .wrap-6 .line-wrapper{
+		position: absolute;
+  	top: 95px;
+    left: 0;
+	}
+}

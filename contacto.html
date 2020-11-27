@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Bootstrap-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <title>Contacto</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <!-- Project SEO-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imagenes/flaticon.png">
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <!-- Style Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/icon/style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Slab:400,700" rel="stylesheet">
+
+    <!-- script google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <!-- script ajax -->
+    <script src="Includes/js/ajax.js"></script>
+  </head>
+  <body>
+    <!-- MENU -->
+    <header>
+      <nav id="navbar-changes" class="navbar mg-0">
+        <div class="container">
+          <!-- Brand and toggle mobile -->
+          <div class="navbar-header">
+            <button id="nav-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-mobile" aria-expanded="false">
+              <i class="icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </i>
+            </button>
+            <a href="index.html" class="">
+              <img alt="Laos" src="assets/imagenes/logo_laos.png" class="">
+            </a>
+          </div>
+          <!-- links-->
+          <div class="navbar-collapse collapse " id="menu-mobile">
+            <div class="mobile-ge">
+              <ul id="nav-ul" class="nav navbar-nav navbar-right">
+                <li><a href="index.html#nosotros" class="img-icon"> Nosotros</a></li>
+                <li><a href="miembros.html" class="img-icon"> Miembros</a></li>
+                <li><a href="especialidades.html" class="img-icon"> Especialidades</a></li>
+                <li><a href="contacto.html" class="img-icon"> Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <section id="wrap-interno" style="background-image: url(assets/imagenes/bg-contacto.jpg)">
+      <div class="bg-wrapper">
+        <div class="container">
+          <div class="box">
+            <div class="date-wrapper">
+              <div class="wrap-box col-md-7 pd-0">
+                <h1><p>Contactanos</p><span>Confíe en la evaluación de su caso a nuestro equipo.</span></h1>
+              </div>
+              <div class="line-wrapper" style="top: 50px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacto-->
+    <section id="contacto">
+      <div class="container">
+
+        <div class="equipo row mg-0">
+          <!-- maps -->
+          <div class="col-sm-6">
+            <div class="title-eq">
+              <h3>Ubicanos en:</h3>
+            </div>
+            <p>Pasaje Sucre 177, Miraflores - Lima 18 Perú <br>
+            Telf.: (511) 445-8728 / 445-1832 / 447-0935 </p>
+            <div class="map">
+              <div id="map-canvas"></div>
+            </div>
+          </div>
+          <!-- escribenos -->
+          <div class="col-sm-6 pdl-">
+            <div class="title-eq ">
+              <h3>Escribenos aquí</h3>
+            </div>
+            <p>Somos Laos, Aguilar, Limas & Asociados escribenos y evalua<br> tu caso con nosotros</p>
+            <div class="dev-cont">
+              <form name="index" onsubmit="enviar_email(); return false">
+                <div class="form-opt">
+                  <input class="c-oscuro text-op" type="text" id="nombre" required=""></input>
+                  <label for="name">Nombre</label>
+                </div>
+                <div class="form-opt">
+                  <input class="c-oscuro text-op" type="text" id="email"  required=""></input>
+                  <label for="email"> E-mail </label>
+                </div>
+                <div class="form-opt">
+                  <input class="c-oscuro text-op" type="text" id="telefono" required=""></input>
+                  <label for="name">Teléfono</label>
+                </div>
+                <div class="form-opt">
+                  <input class="c-oscuro text-op" type="text" id="asunto" required=""></input>
+                  <label for="name">Asunto</label>
+                </div>
+                <div class="form-opt ">
+                  <textarea class="c-oscuro text-op" id="mensaje" rows="3" required=""></textarea>
+                  <label for="mensaje"> Consulta</label>
+                </div>
+                <div class="form-opt">
+                  <button class="libre a-link" type="submit" id="enviar" name="enviar" value="enviar"><span>Enviar</span></button>
+                </div>
+              </form>
+              <div id="resultado">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </section> 
+    <div class="sp"></div>
+
+    <!-- Evalua -->
+    <section id="wrap-ad">
+      <div class="container">
+        <div class="wrap-6 col-md-8 col-md-offset-2">
+          <div class="wrap-box">
+            <h1>EVALUA TU CASO CON NOSOTROS<br>
+            <span style="margin-top: 15px;">Confíe la evaluación de su caso a nuestro equipo para darle alternativas de solución</span>
+            </h1>
+            <a href="contacto.html"class="btn-azul">
+              <span>EVALUAMOS TU CASO</span> 
+              <i class="icon-next"></i>
+            </a>
+          </div>
+          <div class="line-wrapper"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="box-footer">
+              <img src="assets/imagenes/logo_laos.png"><br>
+              <div class="link-x">
+                <a target="_blank" href="https://webmail.lal.com.pe/">Webmail</a> | 
+                <a target="_blank" href="http://190.117.185.231:8080/shark/">Sistemas de expedientes</a>
+              </div>
+              <span>© Derechos reservados | Laos Aguilar Limas & Asociados Abogados,  Copyrigth 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- App -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+  </body>
+
+</html>
